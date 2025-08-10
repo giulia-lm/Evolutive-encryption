@@ -55,7 +55,7 @@ def visualize(n_generations, fitness_evolution, average_fitness_evolution, key_l
 
     axs[0].plot(range(n_generations), fitness_evolution)
     axs[0].set_ylabel('Fitness')
-    axs[0].set_title('Fitness evolution')
+    axs[0].set_title('Best fitness evolution')
 
     axs[1].plot(range(n_generations), average_fitness_evolution)
     axs[1].set_ylabel('Fitness')
