@@ -89,10 +89,10 @@ class GeneticAlgorithm:
             average_fitness_evolution.append(average_fitness)
             key_length_evolution.append(np.mean([len(individual.key) for individual in self.population]))
 
-            print('------------------------')
-            print("Best key:", best_solution.key)
-            print("Cipher text by the key:", best_solution.ciphertext)
-            print("Best key fitness:", best_solution_value)
-            print("Best key length:", len(best_solution.key))
+        print('------------------------')
+        print("Best key:", best_solution.key)
+        print("Cipher text by the key:", best_solution.ciphertext)
+        print("Best key fitness:", best_solution_value)
+        print("Best key length:", len(best_solution.key))
 
         return fitness_evolution, average_fitness_evolution, key_length_evolution
